@@ -1,0 +1,11 @@
+G:\Hoc C#\PBL3_StoreManagement\PBL3_StoreManagement\obj\Debug\PBL3_StoreManagement.csproj.AssemblyReference.cache
+G:\Hoc C#\PBL3_StoreManagement\PBL3_StoreManagement\obj\Debug\PBL3_StoreManagement.csproj.SuggestedBindingRedirects.cache
+G:\Hoc C#\PBL3_StoreManagement\PBL3_StoreManagement\obj\Debug\PBL3_StoreManagement.Properties.Resources.resources
+G:\Hoc C#\PBL3_StoreManagement\PBL3_StoreManagement\obj\Debug\PBL3_StoreManagement.csproj.GenerateResource.cache
+G:\Hoc C#\PBL3_StoreManagement\PBL3_StoreManagement\obj\Debug\PBL3_StoreManagement.csproj.CoreCompileInputs.cache
+G:\Hoc C#\PBL3_StoreManagement\PBL3_StoreManagement\bin\Debug\PBL3_StoreManagement.exe.config
+G:\Hoc C#\PBL3_StoreManagement\PBL3_StoreManagement\bin\Debug\PBL3_StoreManagement.exe
+G:\Hoc C#\PBL3_StoreManagement\PBL3_StoreManagement\bin\Debug\PBL3_StoreManagement.pdb
+G:\Hoc C#\PBL3_StoreManagement\PBL3_StoreManagement\obj\Debug\PBL3_StoreManagement.exe
+G:\Hoc C#\PBL3_StoreManagement\PBL3_StoreManagement\obj\Debug\PBL3_StoreManagement.pdb
+G:\Hoc C#\PBL3_StoreManagement\PBL3_StoreManagement\obj\Debug\PBL3_StoreManagement.GUI.Login.resources
