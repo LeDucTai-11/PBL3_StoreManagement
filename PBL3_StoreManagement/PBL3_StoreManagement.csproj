@@ -33,8 +33,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,11 +56,91 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GUI\Admin.cs">
+    <Compile Include="BLL\BLL_NhapHang.cs" />
+    <Compile Include="BLL\BLL_Account.cs" />
+    <Compile Include="BLL\BLL_HangHoa.cs" />
+    <Compile Include="BLL\BLL_HoaDon.cs" />
+    <Compile Include="BLL\BLL_KhachHang.cs" />
+    <Compile Include="BLL\BLL_QLNhanVien.cs" />
+    <Compile Include="BLL\BLL_TongQuan.cs" />
+    <Compile Include="BLL\Tool.cs" />
+    <Compile Include="DTO\ACCOUNT.cs" />
+    <Compile Include="DTO\AccountView.cs" />
+    <Compile Include="DTO\BillDetailView.cs" />
+    <Compile Include="DTO\BillView.cs" />
+    <Compile Include="DTO\CASHIER.cs" />
+    <Compile Include="DTO\CA_LAM_VIEC.cs" />
+    <Compile Include="DTO\CBBItemCaLamViec.cs" />
+    <Compile Include="DTO\CBBItemKhachHang.cs" />
+    <Compile Include="DTO\CBBItemLoaiHang.cs" />
+    <Compile Include="DTO\CBBItemMaGiamGia.cs" />
+    <Compile Include="DTO\CBBItemNhanVien.cs" />
+    <Compile Include="DTO\CBBItemNhaSanxuat.cs" />
+    <Compile Include="DTO\CreateDB.cs" />
+    <Compile Include="DTO\HANG.cs" />
+    <Compile Include="DTO\HangView.cs" />
+    <Compile Include="DTO\HoaDonNhapHangView.cs" />
+    <Compile Include="DTO\HOA_DON_BAN_HANG.cs" />
+    <Compile Include="DTO\HOA_DON_CHI_TIET.cs" />
+    <Compile Include="DTO\HOA_DON_NHAP_HANG.cs" />
+    <Compile Include="DTO\KhachHangView.cs" />
+    <Compile Include="DTO\KHACH_HANG.cs" />
+    <Compile Include="DTO\LOAI_HANG.cs" />
+    <Compile Include="DTO\NhanVienView.cs" />
+    <Compile Include="DTO\NHA_SAN_XUAT.cs" />
+    <Compile Include="GUI\ChangePassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Admin.Designer.cs">
+    <Compile Include="GUI\ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DetailBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DetailBill.Designer.cs">
+      <DependentUpon>DetailBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_AD\AccountDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_AD\AccountDetail.Designer.cs">
+      <DependentUpon>AccountDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_AD\Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_AD\Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_AD\CashierDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_AD\CashierDetail.Designer.cs">
+      <DependentUpon>CashierDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_AD\CustomerDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_AD\CustomerDetail.Designer.cs">
+      <DependentUpon>CustomerDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_AD\GoodDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_AD\GoodDetail.Designer.cs">
+      <DependentUpon>GoodDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_AD\NhapHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_AD\NhapHang.Designer.cs">
+      <DependentUpon>NhapHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GUI_CS\Cashier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\GUI_CS\Cashier.Designer.cs">
+      <DependentUpon>Cashier.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\Login.cs">
       <SubType>Form</SubType>
@@ -58,11 +148,39 @@
     <Compile Include="GUI\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\VSCustomButton.cs">
+    <Compile Include="GUI\CustomButton.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLCuaHang_DB.cs" />
+    <EmbeddedResource Include="GUI\ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DetailBill.resx">
+      <DependentUpon>DetailBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_AD\AccountDetail.resx">
+      <DependentUpon>AccountDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_AD\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_AD\CashierDetail.resx">
+      <DependentUpon>CashierDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_AD\CustomerDetail.resx">
+      <DependentUpon>CustomerDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_AD\GoodDetail.resx">
+      <DependentUpon>GoodDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_AD\NhapHang.resx">
+      <DependentUpon>NhapHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\GUI_CS\Cashier.resx">
+      <DependentUpon>Cashier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,6 +193,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -89,9 +208,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
-    <Folder Include="DAL\" />
-    <Folder Include="DTO\" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

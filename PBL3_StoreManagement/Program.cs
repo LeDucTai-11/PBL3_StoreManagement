@@ -16,7 +16,7 @@ namespace PBL3_StoreManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GUI.Admin());
+            Application.Run(new GUI.Login());
         }
     }
 }

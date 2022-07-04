@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PBL3ModelStoreContainer" CdmEntityContainer="QLCuaHang_DB">
+    <EntitySetMapping Name="ACCOUNTs">
+      <EntityTypeMapping TypeName="PBL3Model.ACCOUNT">
+        <MappingFragment StoreEntitySet="ACCOUNT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="PW" ColumnName="PW" />
+          <ScalarProperty Name="Loai" ColumnName="Loai" />
+          <ScalarProperty Name="trangThai" ColumnName="trangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CA_LAM_VIEC">
+      <EntityTypeMapping TypeName="PBL3Model.CA_LAM_VIEC">
+        <MappingFragment StoreEntitySet="CA_LAM_VIEC">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="batDau" ColumnName="batDau" />
+          <ScalarProperty Name="ketThuc" ColumnName="ketThuc" />
+          <ScalarProperty Name="TenCaLamViec" ColumnName="TenCaLamViec" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CASHIERs">
+      <EntityTypeMapping TypeName="PBL3Model.CASHIER">
+        <MappingFragment StoreEntitySet="CASHIER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="HoVaTen" ColumnName="HoVaTen" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="IDAccount" ColumnName="IDAccount" />
+          <ScalarProperty Name="IDShift" ColumnName="IDShift" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HANGs">
+      <EntityTypeMapping TypeName="PBL3Model.HANG">
+        <MappingFragment StoreEntitySet="HANG">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TenMatHang" ColumnName="TenMatHang" />
+          <ScalarProperty Name="IDLoaiHang" ColumnName="IDLoaiHang" />
+          <ScalarProperty Name="IDNhaSX" ColumnName="IDNhaSX" />
+          <ScalarProperty Name="IDMaGG" ColumnName="IDMaGG" />
+          <ScalarProperty Name="Gia" ColumnName="Gia" />
+          <ScalarProperty Name="HSD" ColumnName="HSD" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="trangThai" ColumnName="trangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOA_DON_BAN_HANG">
+      <EntityTypeMapping TypeName="PBL3Model.HOA_DON_BAN_HANG">
+        <MappingFragment StoreEntitySet="HOA_DON_BAN_HANG">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDCashier" ColumnName="IDCashier" />
+          <ScalarProperty Name="ThoiGian" ColumnName="ThoiGian" />
+          <ScalarProperty Name="TongTien" ColumnName="TongTien" />
+          <ScalarProperty Name="IDKhachHang" ColumnName="IDKhachHang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOA_DON_CHI_TIET">
+      <EntityTypeMapping TypeName="PBL3Model.HOA_DON_CHI_TIET">
+        <MappingFragment StoreEntitySet="HOA_DON_CHI_TIET">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDHang" ColumnName="IDHang" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="IDHoaDonBanHang" ColumnName="IDHoaDonBanHang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HOA_DON_NHAP_HANG">
+      <EntityTypeMapping TypeName="PBL3Model.HOA_DON_NHAP_HANG">
+        <MappingFragment StoreEntitySet="HOA_DON_NHAP_HANG">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDHang" ColumnName="IDHang" />
+          <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+          <ScalarProperty Name="GiaHoaDon" ColumnName="GiaHoaDon" />
+          <ScalarProperty Name="NgayNhapHang" ColumnName="NgayNhapHang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KHACH_HANG">
+      <EntityTypeMapping TypeName="PBL3Model.KHACH_HANG">
+        <MappingFragment StoreEntitySet="KHACH_HANG">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TenKhachHang" ColumnName="TenKhachHang" />
+          <ScalarProperty Name="SDT" ColumnName="SDT" />
+          <ScalarProperty Name="trangThai" ColumnName="trangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOAI_HANG">
+      <EntityTypeMapping TypeName="PBL3Model.LOAI_HANG">
+        <MappingFragment StoreEntitySet="LOAI_HANG">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TenLoaiHang" ColumnName="TenLoaiHang" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MA_GIAM_GIA">
+      <EntityTypeMapping TypeName="PBL3Model.MA_GIAM_GIA">
+        <MappingFragment StoreEntitySet="MA_GIAM_GIA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DiscountPerPro" ColumnName="DiscountPerPro" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHA_SAN_XUAT">
+      <EntityTypeMapping TypeName="PBL3Model.NHA_SAN_XUAT">
+        <MappingFragment StoreEntitySet="NHA_SAN_XUAT">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TenNhaSX" ColumnName="TenNhaSX" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
